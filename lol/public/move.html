@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width:device-width,initial-scale:1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="m-promo" id="J_promo">
+    <ul class="promo-img-list" id="promoImgList" t-clicked="true" style="width: 4100px; margin-left: 0px;">
+        <li class="promo-item">
+            <a href="#" target="_blank">
+                <img t-chan="15282:22029" t-adid="10242307" src="img/index/2e9949362caf6fefce6529ebb49621ec.jpg" width="820" height="340" alt="冰雪节皮肤">
+            </a>
+        </li>
+        <li class="promo-item">
+            <a href="#" target="_blank">
+                <img t-chan="15282:22128" t-adid="10241224" src="img/index/3c98156495a995da57a0ff2e03cffb3a.jpg" width="820" height="340" alt="K/DA阿卡丽至臻">
+            </a>
+        </li>
+        <li class="promo-item">
+            <a href="#" target="_blank">
+                <img t-chan="15282:22129" t-adid="10241985" src="img/index/8f4817fb20d3da797d408768d28db47e.jpg" width="820" height="340" alt="经典冰雪节皮肤">
+            </a>
+        </li>
+        <li class="promo-item">
+            <a href="#" target="_blank">
+                <img t-chan="15282:22130" t-adid="10242790" src="img/index/459b58d9ae32d1568302e2188e4d6477.jpg" width="820" height="340" alt="12月22日德杯赛程">
+            </a>
+        </li>
+        <li class="promo-item">
+            <a href="#" target="_blank">
+                <img t-chan="15282:22131" t-adid="10242312" src="img/index/4a434d88940db35c350b362935b4d8d0.jpg" width="820" height="340" alt="德杯竞猜有礼">
+            </a>
+        </li>
+    </ul>
+    <div class="promo-title-list" id="promoTitleList">
+        <span class="title selected" style="width: 164px;">冰雪节皮肤</span>
+        <span class="title" style="width: 164px;">K/DA阿卡丽至臻</span>
+        <span class="title" style="width: 164px;">经典冰雪节皮肤</span>
+        <span class="title" style="width: 164px;">12月22日德杯赛程</span>
+        <span class="title" style="width: 164px;">德杯竞猜有礼</span>
+    </div>
+    <script>
+        $(function () {
+            var $promo = $('#J_promo');
+            var length = $('#promoImgList li').length
+            var i = 0;
+            var interval = setInterval(function () {
+                if(i==length) i=0;
+                $promo.children().first().css({
+                    marginLeft: -820*i,
+                    transition:'all .3s'
+                });
+                $('#promoTitleList .selected').removeClass(' selected')
+                $('#promoTitleList').children().eq(i).addClass(' selected')
+                i++;
+            },3000)
+            $('#promoTitleList span').on('mouseenter',function () {
+                i = $(this).index();
+                $('#promoTitleList .selected').removeClass(' selected');
+                $('#promoTitleList').children().eq(i).addClass(' selected');
+                $promo.children().first().css({
+                    marginLeft: -820*i,
+                    transition:'all .3s'
+                });
+                clearInterval(interval);
+            })
+            $('#promoTitleList span').on('mouseleave',function () {
+                interval = setInterval(function () {
+                    if(i==length) i=0;
+                    $promo.children().first().css({
+                        marginLeft: -820*i,
+                        transition:'all .3s'
+                    });
+                    $('#promoTitleList .selected').removeClass(' selected')
+                    $('#promoTitleList').children().eq(i).addClass(' selected')
+                    i++;
+                },3000)
+            })
+        });
+    </script>
+</div>
+</body>
+</html>

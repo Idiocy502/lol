@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+
+<dl id="infospellsTABclassBlocks" style="display:block">
+    <dt>起始装备</dt>
+    <dd class="borlineX">
+        <img data-title="2033" src="img/prop/2033.png" alt="">
+        <img data-title="3340" src="img/prop/3340.png" alt="">
+    </dd>
+    <dt>核心物品</dt>
+    <dd class="borlineX">
+        <img data-title="3078" src="img/prop/3078.png" alt="">
+        <img data-title="3111" src="img/prop/3111.png" alt="">
+        <img data-title="3053" src="img/prop/3053.png" alt="">
+    </dd>
+    <dt>进攻型物品</dt>
+    <dd class="borlineX">
+        <img data-title="3748" src="img/prop/3748.png" alt="">
+        <img data-title="3026" src="img/prop/3026.png" alt="">
+        <img data-title="3153" src="img/prop/3153.png" alt="">
+    </dd>
+    <dt>防御型物品</dt>
+    <dd class="borlineX">
+        <img data-title="3143" src="img/prop/3143.png" alt="">
+        <img data-title="3065" src="img/prop/3065.png" alt="">
+        <img data-title="3742" src="img/prop/3742.png" alt="">
+    </dd>
+</dl>
+<div class="details">
+    <div class="content">
+        <img src="img/prop/3143.png" alt="">
+    </div>
+</div>
+<script>
+    var $blockBox = $("#infospellsTABclassBlocks img[data-title]");
+    var $details = $('.details');
+    $blockBox.hover(
+        function (e) {
+            if(e.target.nodeName=='IMG'){
+                var str = e.target.getAttribute('src');
+                $details.find('img').attr('src',str);
+                $details.css({
+                    display:'block',
+                    top:e.clientY,
+                    left:e.clientX
+                })
+            }
+        },
+        function (e) {
+            if(e.target.nodeName=='IMG'){
+                $details.css({
+                    display:'none'
+                })
+            }
+        }
+    )
+</script>
+</body>
+</html>

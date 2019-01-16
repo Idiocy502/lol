@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import "player.css";
+@import "total.css";
+@import "header.css";
+@import "footer.css";
+@import "topact.css";
+@import "roleInfo.css";
+@import "detailInfo.css";
+@import "snow1.css";
+@import "snow2.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background: #efefef;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0px;
+}
+ul, ol, dl,li {
+    list-style: none;
+}
+b, em {
+    font-style: normal;
+}
+.cgray {
+    color: #999;
+}
+div, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@keyframes topin{
+    0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}
+    100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+}
+@-webkit-keyframes topin{
+    0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity:0}
+    100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+}
+@keyframes opacityin{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+@-webkit-keyframes opacityin{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+#footWrap .foot_ieg_logo, #footWrap .logo-riot, .act-link, .comm-avatar-border, .comm-icon-phone,
+.comm-icon-search, .head-app-hover, .head-userinfo-avatar>span, .icon-dsj, .icon-hot, .icon-new,
+.icon-xx-1, .logined-top .select-area:after, .logo-riot, .logo-tencentgame, .top-act-link, .topfoot-spr, .zm-hover-bg{
+    background-image: url("../img/topfoot-spr.png");
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+}
+.icon-home,.icon-arrow-2{
+    background-image: url(../img/comm-spr.png);
+    background-size: 393px 200px;
+    background-repeat: no-repeat;
+}
+.pagetab-list .current a, .pagetab-list-lnk:hover, .pagetab-list1 .p-list1 a, .pagetab-list2 .p-list2 a, .pagetab-list3 .p-list3 a, .pagetab-list4 .p-list4 a, .pagetab-list5 .p-list5 a, .pagetab-list6 .p-list6 a {
+    text-decoration: none;
+    border-top: 4px solid #00a383;
+    color: #00a383;
+    background: #fff;
+}
+.pagetablist-five .pagetab-list-lnk, .pagetablist-four .pagetab-list-lnk, .pagetablist-sec .pagetab-list-lnk, .pagetablist-third .pagetab-list-lnk {
+    width: 100%;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+.ract, .ract em, .ract-box .collapse, .ract-box .expand, .collapse02 {
+    background-image: url(../img/ract_bg.png);
+    background-repeat: no-repeat;
+}
+.ract{
+    width: 220px;
+    height: 110px;
+    position: absolute; bottom:0;
+    right: 0;
+    overflow:hidden; font-family:'Microsoft Yahei';
+    position: fixed;
+    z-index: 18;
+}
+.ract img{
+    border: 0 none;
+}
+.collapse02 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-position: -159px -159px;
+    text-indent: -9000em;
+    outline: none;
+    border: 1px solid #2d2d2d;
+}
+.ract-box .ract-content {
+    background-color: #FAFBF8;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #B1B0B0;
+    right: 0;
+}
+.ract-box .ract-content {
+    background-color: #FAFBF8;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #B1B0B0;
+    right: 0;
+}

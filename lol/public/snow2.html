@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄联盟周边冰雪之约</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body class="bodybg">
+<div class="wrap-inner">
+    <div class="header">
+        <h1 class="hidden">英雄联盟周边冰雪之约</h1>
+        <strong class="hidden">2018这个冬日有你才不冷</strong>
+        <a href="main.html" class="logo1" title="英雄联盟" target="_blank">英雄联盟</a>
+        <a href="javascript:;" class="logo1 logo2" title="周边商城" target="_blank">周边商城</a>
+        <a href="javascript:;" class="nav1" title="买新品即赠随机魄罗毛绒数量有限，赠完即止">买新品即赠随机魄罗毛绒数量有限，赠完即止</a>
+        <a href="javascript:;" class="nav1 nav2" title="288福袋（冰雪节专供版）闪现冰雪节">288福袋（冰雪节专供版）闪现冰雪节</a>
+    </div>
+    <div class="c1">
+        <h2 class="hidden">冰雪节提伯斯熊毛绒</h2>
+        <p class="c1-p">冰霜烈焰 安妮皮肤同款提伯斯，"冰雪节提伯斯"陪你一起过冬</p>
+        <a href="javascript:;" target="_blank" class="buy1" title="立即购买">立即购买</a>
+        <div class="right_nav" id="right_nav" style="right: -178px;">
+            <a href="javascript:;" class="n1" title="冰雪提伯斯">冰雪提伯斯</a>
+            <a href="javascript:;" class="n2" title="魄罗毛绒系列">魄罗毛绒系列</a>
+            <a href="javascript:;" class="n3" title="星之守护">星之守护</a>
+            <a href="javascript:;" class="n4" title="生活产品">生活产品</a>
+            <a href="javascript:;" id="mktop" title="TOP"></a>
+        </div>
+    </div>
+    <script>
+        $(window).on('scroll',function () {
+            var scroll_top = Math.max( document.documentElement.scrollTop,document.body.scrollTop );
+            //console.log(height)
+            if(scroll_top>920){
+                $('#right_nav').css({
+                    position:'fixed',
+                    right:81.5
+                })
+            }else{
+                $('#right_nav').css({
+                    position:'absolute',
+                    right:-178
+                })
+            }
+        })
+        $('.n1').click(function(){$('html,body').animate({scrollTop:$('.c1').offset().top},600);});
+        $('.n2').click(function(){$('html,body').animate({scrollTop:$('.c2').offset().top},600);});
+        $('.n3').click(function(){$('html,body').animate({scrollTop:$('.c3').offset().top},600);});
+        $('.n4').click(function(){$('html,body').animate({scrollTop:$('.c4').offset().top},600);});
+        $('#mktop').click(function(){$('html,body').animate({scrollTop: '0px'}, 500);});
+    </script>
+    <div class="c2">
+        <h2 class="hidden">暖心魄罗来袭</h2>
+        <a href="javascript:;" target="_blank" class="buy1 buy2" title="立即购买">立即购买</a>
+        <p class="c2-p">特别提醒：魄罗抱枕预计将从12月25日开始发货~</p>
+        <a href="javascript:;" target="_blank" class="buy3" title="立即购买">立即购买</a>
+        <a href="javascript:;" target="_blank" class="buy3 buy4" title="立即购买">立即购买</a>
+    </div>
+    <div class="c3">
+        <h2 class="hidden">星光起源星之守护者新系列</h2>
+        <p class="c1-p c3-p">他们要么合而战 要么散而陨，他们是宇宙前沿的星之守护者</p>
+        <div class="box-in">
+            <div class="box">
+                <ul class="list" id="list" style="width: 2754px; left: 0px;">
+                    <li data_index="0"><a href="#" target="_blank"><img src="img/snow2/pic1.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="1"><a href="#" target="_blank"><img src="img/snow2/pic2.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="2"><a href="#" target="_blank"><img src="img/snow2/pic3.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="3"><a href="#" target="_blank"><img src="img/snow2/pic4.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="4"><a href="#" target="_blank"><img src="img/snow2/pic5.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="5"><a href="#" target="_blank"><img src="img/snow2/pic6.jpg" width="459" height="382" alt=""></a></li>
+                </ul>
+            </div>
+            <ul class="bot-point" id="bot-point">
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+            <a href="javascript:;" class="arr prev" id="prev" title="上一张"></a>
+            <a href="javascript:;" class="arr next" id="next" title="上一张"></a>
+        </div>
+        <div class="box-in box-in2">
+            <div class="box">
+                <ul class="list" id="list2" style="width: 2754px; left: -2295px;">
+                    <li data_index="0"><a href="#" target="_blank"><img src="img/snow2/pic11.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="1"><a href="#" target="_blank"><img src="img/snow2/pic22.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="2"><a href="#" target="_blank"><img src="img/snow2/pic33.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="3"><a href="#" target="_blank"><img src="img/snow2/pic44.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="4"><a href="#" target="_blank"><img src="img/snow2/pic55.jpg" width="459" height="382" alt=""></a></li>
+                    <li data_index="5"><a href="#" target="_blank"><img src="img/snow2/pic66.jpg" width="459" height="382" alt=""></a></li>
+                </ul>
+            </div>
+            <ul class="bot-point" id="bot-point2">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class="active"></li>
+            </ul>
+            <a href="javascript:;" class="arr prev" id="prev2" title="上一张"></a>
+            <a href="javascript:;" class="arr next" id="next2" title="下一张"></a>
+        </div>
+        <a href="javascript:;" target="_blank" class="buy5" title="立即购买">立即购买</a>
+        <a href="javascript:;" target="_blank" class="buy5 buy6" title="立即购买">立即购买</a>
+        <p class="r1"></p>
+        <p class="r2"></p>
+    </div>
+    <script>
+        !function(window) {
+            window.picLoop = function(picList,bot,bool) {
+                return new picLoop.prototype.init(picList,bot,bool);//初始化共有属性
+            };
+            picLoop.prototype = {//当前构造函数的原型对象（picLoop的原型对象)子元素可继承，节省内存
+                init : function(picList,bot,bool) {
+                    this.picList = $('#' + picList);//图片列表
+                    this.picListLi = this.picList.find('li');//图片数组
+                    this.wid = this.picListLi.innerWidth();//文档显示区的宽度
+                    this.len = this.picListLi.length;
+                    this.picList.css({
+                        width : this.wid * this.len
+                    });
+                    this.loop = bool;//是否循环
+                    this.num = 0;
+                    this.polNum = 0;
+                    this.timer = null;
+                    var that = this;
+                    this.botPointLi =  bot;//小图标列表
+                    if( this.botPointLi ) {
+                        this.botPointLi = $('#' + bot + ' > li');
+                        this.botPointLi.each(function(index) {
+                            $(this).on('click',function() {
+                                var idx = 0;
+                                that.picList.find('li').each(function(idxm){
+                                    console.log(idxm)
+                                    if($(this).attr('data_index')==index){
+                                        idx  = idxm
+                                        that.num = idxm;
+                                        that.play(idx);
+                                    }
+                                })
+                                $(this).addClass('active').siblings().removeClass('active');
+                            });
+                            that.picList.find('li').eq(index).attr('data_index',index)
+                        });
+                    }
+                },
+                next : function() {
+                    //如果当前元素是数组的最后一个
+                    if(this.num>=this.len-1){
+                        //console.log(this.len-1)
+                        //第一步：获得数组中的第一个元素first
+                        var first = this.picList.find('li:first-child')
+                        //第二步：在数组的末尾追加first
+                        this.picList.append(first);
+                        //第三步：删除数组中的第一个元素
+                        this.picList.remove('li:first-child')
+
+                        this.poolNUm = this.num;
+                        this.num -=1;
+                        this.picList.css('left',this.num * - this.wid)
+                    }
+                    this.num = this.num < this.len - 1 ? ++this.num : this.loop ? 0 : this.len - 1;
+                    this.play(this.num,this.poolNUm);
+                },
+                prev : function() {
+                    if(this.num<=0){
+                        var last = this.picList.find('li:last-child')
+                        this.picList.prepend(last);
+                        this.picList.remove('li:last-child')
+                        this.poolNUm = this.num;
+                        this.num +=1;
+                        this.picList.css('left',this.num * - this.wid)
+                    }
+                    this.num = this.num > 0 ? --this.num : this.loop ? this.len - 1 : 0;
+                    this.play(this.num,this.poolNUm);
+                },
+                play : function(n,p) {
+                    this.picList.animate({
+                        left : n * - this.wid
+                    });
+                    this.polNum = this.picList.find('li').eq(this.num).attr('data_index');
+                    if( this.botPointLi ) {
+                        this.botPointLi.eq(this.polNum).addClass('active').siblings().removeClass('active');
+                    }
+                }
+            }
+            picLoop.prototype.init.prototype = picLoop.prototype;
+        }(window);
+        var s1 = new picLoop('list','bot-point',true);
+        $('#next').on('click',function() {
+            s1.next();
+        });
+        $('#prev').on('click',function() {
+            s1.prev();
+        });
+        var s2 = new picLoop('list2','bot-point2',true);
+        $('#next2').on('click',function() {
+            s2.next();
+        });
+        $('#prev2').on('click',function() {
+            s2.prev();
+        });
+        var timer = setInterval('s1.next()',2000);
+        var timer = setInterval('s2.next()',2500);
+    </script>
+    <div class="c4">
+        <h2 class="hidden">冰雪精致生活</h2>
+        <a href="javascript:;" target="_blank" class="buy7" title="立即购买">立即购买</a>
+        <a href="javascript:;" target="_blank" class="buy7 buy8" title="立即购买">立即购买</a>
+        <a href="javascript:;" target="_blank" class="buy7 buy9" title="立即购买">立即购买</a>
+        <a href="javascript:;" class="more-link" target="_blank" title="查找更多精彩周边点击进入周边商城官网">查找更多精彩周边 点击进入周边商城官网</a>
+    </div>
+    <div class="c5">
+        <h2 class="hidden">活动规则说明</h2>
+        <ul class="rule clearfix">
+            <li><span>1</span><p><em>周边冰雪节活动时间：</em>12月11日-12月25日</p></li>
+            <li><span>2</span><p><em>买即赠活动：</em>凡在活动期间购买新品的召唤师，每单<br>都可随机获赠下列小毛绒1个，先到先得，赠完即止~</p></li>
+            <li><span>3</span><p><em>关于产品发货：</em><br>
+                订单支付完成后，仓库将按照订单的先后顺序依次寄出，并采用顺丰快递保证您的商品顺利配送。活动期间订单量较大，仓库将于7个工作日内为大家安排发货。请各位召唤师们耐心等待，感谢您的理解。<br>如有其它疑问，请咨询周边商城客服为您解答</p></li>
+        </ul>
+        <p class="c3-p-e"><img src="img/snow2/ewm.jpg" width="92" height="92" alt="二维码">周边客服二维码</p>
+    </div>
+</div>
+<div class="bg-box">
+    <div class="bg1 d1"><div class="bg-box-in"></div></div>
+    <div class="bg2 d2"><div class="bg-box-in"></div></div>
+    <div class="bg3 d3"><div class="bg-box-in"></div></div>
+    <div class="bg4 d4"><div class="bg-box-in"></div></div>
+    <div class="bg5 d5"><div class="bg-box-in"></div></div>
+    <div class="bg6 d6"><div class="bg-box-in"></div></div>
+    <div class="bg7 d7"><div class="bg-box-in"></div></div>
+    <div class="bg8 d8"><div class="bg-box-in"></div></div>
+    <div class="bg9 d9"><div class="bg-box-in"></div></div>
+    <div class="bg10 d10"><div class="bg-box-in"></div></div>
+    <div class="bg11 d11"><div class="bg-box-in"></div></div>
+    <div class="bg12 d12"><div class="bg-box-in"></div></div>
+    <div class="bg13 d13"><div class="bg-box-in"></div></div>
+    <div class="bg14 d14"><div class="bg-box-in"></div></div>
+    <div class="bg15 d15"><div class="bg-box-in"></div></div>
+    <div class="bg16 d16"><div class="bg-box-in"></div></div>
+</div>
+<footer id="afooter" style="background: #b5b9c9">
+    <div id="footer_ieg">
+        <div class="wrap_ieg">
+            <p>
+                <a href="#" target="_blank">腾讯互动娱乐</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">服务条款</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">隐私政策</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">腾讯游戏招聘</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">腾讯游戏客服</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">游戏地图</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">成长守护平台</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">商务合作</a>&nbsp;|&nbsp;
+                <a href="#" target="_blank">网站导航</a>
+            </p>
+            <p class="e copyright_en">
+                COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.
+            </p>
+            <p class="copyright_zh">
+                <a href="#" target="_blank">腾讯公司 版权所有</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

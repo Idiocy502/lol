@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏资料-英雄联盟</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<header class="comm-head"></header>
+<div class="wraper">
+    <div class="layout mainer">
+        <!--路径导航-->
+        <div class="website-path">
+            <i class="icon-home"></i>
+            <a href="">英雄联盟首页</a>
+            <i class="icon-arrow-2"></i>
+            <a href="#">游戏资料</a>
+            <i class="icon-arrow-2"></i>
+            <a href="roleInfo.html">全部英雄</a>
+            <i class="icon-arrow-2"></i>
+            <a class="here" id="DATAnametitle">刀锋舞者 艾瑞莉娅</a>
+        </div>
+        <div class="infodefail">
+            <div id="defailDATA" class="defail-data">
+                <h1 id="DATAname">刀锋舞者</h1>
+                <h2 id="DATAtitle">艾瑞莉娅</h2>
+                <div id="DATAtags" class="defail-tags"><span>战士</span><span>刺客</span></div>
+                <dl id="DATAinfo" class="defail-stat"><dt>物理攻击</dt><dd><i class="up up1" title="7" style="width:70%"></i></dd>
+                    <dt>魔法攻击</dt>
+                    <dd><i class="up up2" title="5" style="width:50%"></i></dd>
+                    <dt>防御能力</dt>
+                    <dd><i class="up up3" title="4" style="width:40%"></i></dd>
+                    <dt>上手难度</dt>
+                    <dd><i class="up up4" title="5" style="width:50%"></i></dd>
+                </dl>
+                <div class="defail-buy"><a id="defailBuy" href="#" target="_blank" class="commspr commbtn-buy">购买英雄</a></div>
+            </div>
+            <span class="sbg"></span>
+            <div class="defail-skin">
+                <ul id="skinBG" class="defail-skin-bg" style="left: 0px;">
+                    <li title="默认皮肤">
+                        <img src="img/role/big39000.jpg" alt="默认皮肤">
+                    </li>
+                    <li title="夜刃 艾瑞莉娅">
+                        <img src="img/role/big39001.jpg" alt="夜刃 艾瑞莉娅">
+                    </li>
+                    <li title="凌云之翼 艾瑞莉娅"><img src="img/role/big39002.jpg" alt="凌云之翼 艾瑞莉娅"></li>
+                    <li title="夜行义贼 艾瑞莉娅"><img src="img/role/big39003.jpg" alt="夜行义贼 艾瑞莉娅"></li>
+                    <li title="冰霜之刃 艾瑞莉娅"><img src="img/role/big39004.jpg" alt="冰霜之刃 艾瑞莉娅"></li>
+                    <li title="莲花之令 艾瑞莉娅"><img src="img/role/big39005.jpg" alt="莲花之令 艾瑞莉娅"></li>
+                    <li title="玉剑传说 舞剑仙"><img src="img/role/big39006.jpg" alt="玉剑传说 舞剑仙"></li></ul>
+                <div class="defail-skin-nav">
+                    <div class="defail-skin-name"><span id="skinName">默认皮肤</span></div>
+                    <ul id="skinNAV">
+                        <li rel="_0" class="current">
+                            <a title="默认皮肤">
+                                <img width="60" height="60" src="img/role/small39000.jpg" alt="默认皮肤">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_1" class="">
+                            <a title="夜刃 艾瑞莉娅">
+                                <img width="60" height="img/roleimg60" src="img/role/small39001.jpg" alt="夜刃 艾瑞莉娅">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_2" class="">
+                            <a title="凌云之翼 艾瑞莉娅">
+                                <img width="60" height="60" src="img/role/small39002.jpg" alt="凌云之翼 艾瑞莉娅">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_3" class="">
+                            <a title="夜行义贼 艾瑞莉娅">
+                                <img width="60" height="60" src="img/role/small39003.jpg" alt="夜行义贼 艾瑞莉娅">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_4" class="">
+                            <a title="冰霜之刃 艾瑞莉娅"><img width="60" height="60" src="img/role/small39004.jpg" alt="冰霜之刃 艾瑞莉娅">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_5" class="">
+                            <a title="莲花之令 艾瑞莉娅">
+                                <img width="60" height="60" src="img/role/small39005.jpg" alt="莲花之令 艾瑞莉娅">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                        <li rel="_6" class="">
+                            <a title="玉剑传说 舞剑仙"><img width="60" height="60" src="img/role/small39006.jpg" alt="玉剑传说 舞剑仙">
+                                <span class="sbor"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="defailVodPlayer" class="defail-vod-player" style="display:none;">
+                <div id="VideoContent"><p class="loading">视频加载中...</p></div>
+                <a href="javascript:hidVod()" class="popclose">×</a>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="infoleftcont">
+                <h4 class="infotitle">背景故事</h4>
+                <div class="colbox bgstroy">
+                    <div id="DATAlore">诺克萨斯对艾欧尼亚的占领催生了许多英雄，但没有谁像纳沃利的艾瑞莉娅一般令人意外。她将家乡的古老舞艺化为战技，以精心修习的优雅身姿操控着致命的刀丛。在她证明了自己的战斗实力后，被众人推举为反抗军的领袖和首脑，为了守卫家园而奋斗至今。</div>
+                    <a id="Gmore" href="javascript:;" class="cgray">查看更多...</a>
+                    <a id="Hmore" href="javascript:;" class="cgray" style="display: none;">收起...</a>
+                </div>
+                <h4 class="infotitle">技能介绍</h4>
+                <ul id="DATAspellsNAV" class="infotab">
+                    <li class="current"><img src="img/skil/Irelia_Passive.png" alt=""></li>
+                    <li><img src="img/skil/IreliaQ.png" alt=""></li>
+                    <li><img src="img/skil/IreliaW.png" alt=""></li>
+                    <li><img src="img/skil/IreliaE.png" alt=""></li>
+                    <li><img src="img/skil/IreliaR.png" alt=""></li>
+                </ul>
+                <div id="DATAspells" class="colbox infoskillbox">
+                    <div class="skilltitle">
+                        <h5>艾欧尼亚热诚</h5>
+                        <em>被动技能</em>
+                    </div>
+                    <p class="skilltip">
+                        当艾瑞莉娅用技能命中敌人时，她会获得可叠加的增益效果，让她的普攻可造成额外伤害。这个效果并且在满层时还会为艾瑞莉娅提供攻击速度加成并对护盾造成更多伤害。
+                    </p>
+                </div>
+                <script>
+                    var $skillParent = $('#DATAspellsNAV');
+                    var $tit = $('#DATAspells .skilltitle');
+                    var $tip = $('#DATAspells .skilltip');
+                    var h5s = ['艾欧尼亚热诚','利刃冲击','距破之舞','比翼双刃','先锋之刃'];
+                    var ems = ['被动技能','快捷键：Q','快捷键：W','快捷键：E','快捷键：R'];
+                    var tips = [
+                        '当艾瑞莉娅用技能命中敌人时，她会获得可叠加的增益效果，让她的普攻可造成额外伤害。这个效果并且在满层时还会为艾瑞莉娅提供攻击速度加成并对护盾造成更多伤害。',
+                        '艾瑞莉娅向一名敌人发起突进，造成物理伤害，施加攻击特效并治疗生命值。<br><br>如果目标已被<span>标记</span>或死于【利刃冲击】，那么【利刃冲击】的冷却时间会重置。<br><br><span class="size16 color8C8C8C">【利刃冲击】对小兵造成额外伤害。</span>',
+                        '<span>第一段施放：</span>艾瑞莉娅将她的利刃结成防御阵形，获得伤害减免和1层【艾欧尼亚热诚】效果，但无法行动。<br><br><span>第二段施放：</span>艾瑞莉娅将利刃们猛挥出去，造成物理伤害。伤害值会随蓄力时间提升，最多可提升至，需要蓄力秒。<br><br><span class="size16 color8C8C8C">【距破之舞】无法被打断。</span>',
+                        '艾瑞莉娅召出两柄朝着彼此飞行的利刃，造成魔法伤害和秒晕眩效果。<br><br>英雄和大型野怪会被<span>标记</span>秒。',
+                        '艾瑞莉娅结成一阵风暴般的利刃，它们会在命中一名敌方英雄时向外爆开。利刃造成魔法伤害并<span>标记</span>英雄和野怪秒。<br><br>艾瑞莉娅随后会将利刃形成一道刃墙，持续 秒。穿过刃墙的敌人会受到魔法伤害，被减速%，并被缴械秒。'
+                    ]
+                    $skillParent.on('click',function (e) {
+                        var elem = e.target;
+                        if(elem.nodeName=='IMG'){
+                            $('#DATAspellsNAV .current').removeClass('current');
+                            elem.parentElement.className+=' current';
+                            //$tit.children(':eq(0)')=
+                            for(var i = 0;i<$skillParent.children().length;i++){
+                                if ($skillParent.children()[i]==e.target.parentElement){
+                                    $tit.children(':eq(0)').html(h5s[i]);
+                                    $tit.children(':eq(1)').html(ems[i]);
+                                    $tip.html(tips[i]);
+                                }
+                            }
+                        }
+                    })
+                </script>
+                <h4 class="infotitle">推荐装备</h4>
+                <div id="jSearchItemDiv" class="colbox infospells">
+                    <div class="pagetab">
+                        <ul id="infospellsTAB" class="pagetab-list pagetablist-sec">
+                            <li class="current" rel="classBlocks"><a class="pagetab-list-lnk">召唤师峡谷</a></li>
+                            <li rel="aramBlocks"><a class="pagetab-list-lnk">极地大乱斗</a></li>
+                        </ul>
+                    </div>
+                    <dl id="infospellsTABclassBlocks" style="display:block">
+                        <dt></dt>
+                        <dd class="borlineX">
+                        <img data-title="350" src="img/prop/2033.png" alt="腐败药水">
+                        <img data-title="0" src="img/prop/3340.png" alt="监视图腾（饰品）">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="333" src="img/prop/3078.png" alt="三相之力">
+                            <img data-title="350" src="img/prop/3111.png" alt="水银之靴">
+                            <img data-title="725" src="img/prop/3053.png" alt="斯特拉克的挑战护手">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="700" src="img/prop/3748.png" alt="巨型九头蛇">
+                            <img data-title="100" src="img/prop/3026.png" alt="守护天使">
+                            <img data-title="700" src="img/prop/3153.png" alt="破败王者之刃">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="900" src="img/prop/3143.png" alt="兰顿之兆">
+                            <img data-title="800" src="img/prop/3065.png" alt="振奋盔甲">
+                            <img data-title="1100" src="img/prop/3742.png" alt="亡者的甲板">
+                        </dd>
+                    </dl>
+                    <dl id="infospellsTABaramBlocks" style="display:none">
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="950" src="img/prop/2051.png" alt="守护者号角">
+                            <img data-title="300" src="img/prop/1001.png" alt="速度之靴">
+                            <img data-title="50" src="img/prop/2003.png" alt="生命药水">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="333" src="img/prop/3078.png" alt="三项之力">
+                            <img data-title="725" src="img/prop/3053.png" alt="斯特拉克的挑战护手">
+                            <img data-title="350" src="img/prop/3111.png" alt="水银之靴">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="700" src="img/prop/3748.png" alt="巨型九头蛇">
+                            <img data-title="625" src="img/prop/3812.png" alt="死亡之舞">
+                            <img data-title="700" src="img/prop/3153.png" alt="破败王者之刃">
+                        </dd>
+                        <dt></dt>
+                        <dd class="borlineX">
+                            <img data-title="800" src="img/prop/3065.png" alt="振奋盔甲">
+                            <img data-title="850" src="img/prop/3156.png" alt="玛莫提乌斯之噬">
+                            <img data-title="800" src="img/prop/3161.png" alt="朔极之矛">
+                        </dd>
+                    </dl>
+                </div>
+                <h4 class="infotitle">使用技巧</h4>
+                <div class="colbox arttips">
+                    <dl id="DATAallytips" class="borlineX"><dt>当你使用刀锋舞者</dt><dd><p>- 在你前往目标英雄的途中，先用【利刃冲击】攻击低生命的小兵，再用【利刃冲击】攻击目标英雄，便可瞬间移动很远的距离。</p><p>- 【距破之舞】不可被控制效果打断，可尝试用它来免除即将到来的控制效果。</p><p>- 【比翼双刃】没有最大飞行距离，可尝试以创造性的方式来使用它。</p></dd></dl>
+                    <dl id="DATAenemytips"><dt>敌人使用刀锋舞者</dt><dd><p>- 多关注【艾欧尼亚狂热】的层数，并且试图在它刚消失时与艾瑞莉娅开战。</p><p>- 兵线可极大地增强艾瑞莉娅的机动能力，不要在她处在一大波小兵之中时与她作战。</p><p>- 不要把你的重要技能倾泻在【距破之刃】上。</p></dd></dl>
+                </div>
+            </div>
+
+            <div class="inforightcont">
+                <div id="jUserRecInfo" class="clearfix infotitle">
+                    <h4 class="fl">我的记录</h4>
+                    <p id="jUserHeroArea" class="fr more"></p>
+                </div>
+                <div id="jUserRecList" class="colbox">
+                    <div id="jUserHeroinfo" class="clearfix pageuserline-shout">您无法查看使用该英雄的记录，请<a class="cgreen" href="javascript:LW201310_Userinfo.userLogin();">[登陆]</a>，并绑定所在大区。</div>
+                    <div id="jUserRecH5" class="hisbox-title" style="display:none;">
+                        <h5 class="fl">近期使用记录</h5>
+                        <p class="fr more"><a id="jUserPersonalPage" class="cgray publicspr ico-more2" href="//lol.qq.com/personal/index.shtml">查看更多</a></p>
+                    </div>
+
+                    <ul id="jUserHeroBattle" class="hisbox-list clearfix"></ul>
+                </div>
+
+
+                <div class="clearfix infotitle">
+                    <h4 class="fl">推荐攻略</h4>
+                    <div class="fr more"><a class="cgray publicspr ico-more2" href="javascript:;">查看更多</a></div>
+                </div>
+                <div class="colbox info-medialist">
+                    <ol id="jMediaList" class="ghot-list">
+                        <li class="item-normal">
+                            <p class="gt1">
+                                <a title="永远不灭的意志——新版刀妹教学" href="#" class="names" target="_blank">
+                                    <i class="spr ico-arrow"></i>
+                                    <span>永远不灭的意志——新版刀妹教学</span>
+                                </a>
+                            </p>
+                            <p class="gt2">2017-06-21</p>
+                            <p class="gt3">
+                                <span class="gfrom">
+                                    来源：
+                                </span>玩家投稿
+                            </p>
+                            <p class="gt4">
+                                <span class="ghot">评分：</span>
+                                <span class="sidbar">
+                                    <i class="empt"></i>
+                                    <i class="upbar-green" style="width:79%"></i>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="item-normal">
+                            <p class="gt1">
+                                <a title="永远不灭的意志——上单刀妹教学" href="#" class="names" target="_blank">
+                                    <i class="spr ico-arrow"></i>
+                                    <span>永远不灭的意志——上单刀妹教学</span>
+                                </a>
+                            </p>
+                            <p class="gt2">2017-05-02</p>
+                            <p class="gt3">
+                                <span class="gfrom">来源：</span>
+                                玩家投稿
+                            </p>
+                            <p class="gt4">
+                                <span class="ghot">评分：</span>
+                                <span class="sidbar">
+                                    <i class="empt"></i>
+                                    <i class="upbar-green" style="width:67%"></i>
+                                </span>
+                            </p>
+                        </li>
+                        <li class="item-normal">
+                            <p class="gt1">
+                                <a title="三项破败已成最大赢家 上单刀妹对线大全" href="#" class="names" target="_blank">
+                                    <i class="spr ico-arrow"></i>
+                                    <span>三项破败已成最大赢家 上单刀妹对线大全</span>
+                                </a>
+                            </p>
+                            <p class="gt2">2017-03-29</p>
+                            <p class="gt3">
+                                <span class="gfrom">来源：</span>
+                                U9
+                            </p>
+                            <p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="上路最强后期：刀妹的正确打开方式" href="//lol.qq.com/guide/page.shtml?id=11958" class="names" target="_blank"><i class="spr ico-arrow"></i><span>上路最强后期：刀妹的正确打开方式</span></a></p><p class="gt2">2016-09-18</p><p class="gt3"><span class="gfrom">来源：</span>大咖</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="6.16上单刀妹依旧抢眼 带线套路玩坏对方" href="//lol.qq.com/guide/page.shtml?id=11282" class="names" target="_blank"><i class="spr ico-arrow"></i><span>6.16上单刀妹依旧抢眼 带线套路玩坏对方</span></a></p><p class="gt2">2016-08-20</p><p class="gt3"><span class="gfrom">来源：</span>17173</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="无法磨灭的意志 永远的上单一姐                                                                                              " href="//lol.qq.com/guide/page.shtml?id=11089" class="names" target="_blank"><i class="spr ico-arrow"></i><span>无法磨灭的意志 永远的上单一姐                                                                                              </span></a></p><p class="gt2">2016-08-18</p><p class="gt3"><span class="gfrom">来源：</span>21CD</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="真正的意志是不会被击败的！永削不灭的刀妹" href="//lol.qq.com/guide/page.shtml?id=10903" class="names" target="_blank"><i class="spr ico-arrow"></i><span>真正的意志是不会被击败的！永削不灭的刀妹</span></a></p><p class="gt2">2016-08-16</p><p class="gt3"><span class="gfrom">来源：</span>52PK</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="削弱还是很强 6.16刀妹最全面解析" href="//lol.qq.com/guide/page.shtml?id=10514" class="names" target="_blank"><i class="spr ico-arrow"></i><span>削弱还是很强 6.16刀妹最全面解析</span></a></p><p class="gt2">2016-08-12</p><p class="gt3"><span class="gfrom">来源：</span>不详</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="伤害完全看不懂的刀妹套路" href="//lol.qq.com/guide/page.shtml?id=7288" class="names" target="_blank"><i class="spr ico-arrow"></i><span>伤害完全看不懂的刀妹套路</span></a></p><p class="gt2">2016-06-30</p><p class="gt3"><span class="gfrom">来源：</span>www.loldk.com</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="永恒不变的上单霸主 国服第一刀妹毒纪亲授教学" href="//lol.qq.com/guide/page.shtml?id=6874" class="names" target="_blank"><i class="spr ico-arrow"></i><span>永恒不变的上单霸主 国服第一刀妹毒纪亲授教学</span></a></p><p class="gt2">2016-06-12</p><p class="gt3"><span class="gfrom">来源：</span>lol.tgbus.com</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="感天动地的加强 6.7版本上单刀妹玩法" href="//lol.qq.com/guide/page.shtml?id=6859" class="names" target="_blank"><i class="spr ico-arrow"></i><span>感天动地的加强 6.7版本上单刀妹玩法</span></a></p><p class="gt2">2016-06-12</p><p class="gt3"><span class="gfrom">来源：</span>l.zhangyoubao.com</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li><li class="item-normal"><p class="gt1"><a title="秒天秒地秒空气 论上单刀妹如何1V3" href="//lol.qq.com/guide/page.shtml?id=5722" class="names" target="_blank"><i class="spr ico-arrow"></i><span>秒天秒地秒空气 论上单刀妹如何1V3</span></a></p><p class="gt2">2016-06-12</p><p class="gt3"><span class="gfrom">来源：</span>www.aipai.com</p><p class="gt4"><span class="ghot">评分：</span><span class="sidbar"><i class="empt"></i><i class="upbar-green" style="width:0%"></i></span></p></li></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footWrap"></div>
+<script src="js/header.js"></script>
+<script src="js/detailInfo.js"></script>
+</body>
+</html>

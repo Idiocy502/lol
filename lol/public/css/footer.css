@@ -1,0 +1,129 @@
+#afooter {
+    top: -10px;
+    background: #000000;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+#afooter .wrap_ieg {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+#afooter p {
+    color: #6e6e6e;
+    line-height: 24px;
+    font-size: 10px;
+}
+#afooter a {
+    color: #6e6e6e;
+    font-size: 12px;
+}
+#afooter a:hover {
+    text-decoration: underline;
+}
+#footWrap {
+    width: 100%;
+    min-width: 1230px;
+    padding: 45px 0;
+    background-color: #e3e2e2;
+    color: #9f9378;
+    font-size: 12px;
+    line-height: 24px;
+}
+#footWrap .foot_inner {
+    max-width: 1358px;
+    min-width: 1230px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.foot {
+    background: #fff;
+    color: #000;
+    font: 12px/20px "微软雅黑","宋体";
+    min-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+.foot_dark {
+    background: #000;
+    color: #494949;
+}
+#footWrap .foot_dark {
+    background-color: #e3e2e2;
+}
+.foot_cpright {
+    padding: 15px 20px;
+}
+.foot_lefts {
+    float: left;
+    display: inline;
+}
+#footWrap .foot_lefts {
+    display: block!important;
+    height: 100px;
+    width: auto;
+    line-height: 100px;
+    font-size: 0;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -50px;
+}
+#footWrap .foot_ieg_logo {
+    background-position: -216px 0;
+    width: 189px;
+    height: 34px;
+    float: none;
+}
+#footWrap .foot_lefts>a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px 0 8px;
+}
+#footWrap .logo-riot {
+    background-position: -216px -84px;
+    width: 83px;
+    height: 56px;
+    float: none;
+}
+.foot_links {
+    display: inline;
+    float: right;
+    width: 682px;
+    list-style: none;
+}
+#footWrap .foot_links {
+    width: 750px;
+}
+.foot_links .link_map {
+    font-size: 0;
+}
+.foot_links li {
+    line-height: 20px;
+    overflow: hidden;
+}
+#footWrap li {
+    color: #9f9378;
+}
+.foot_dark a {
+    color: #494949;
+}
+.foot_links .link_map span, .foot_links .link_map a {
+    font-size: 12px;
+    color: #494949;
+}
+#footWrap a {
+    color: #9f9378;
+}
+#footWrap .f_line {
+    color: #9f9378;
+    margin: 0 2px;
+}
+#footWrap a:hover {
+    text-decoration: underline;
+}
+

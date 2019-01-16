@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <ul id="DATAspellsNAV" class="infotab">
+        <li class="current"><img src="img/skil/Irelia_Passive.png" alt=""></li>
+        <li><img src="img/skil/IreliaQ.png" alt=""></li>
+        <li><img src="img/skil/IreliaW.png" alt=""></li>
+        <li><img src="img/skil/IreliaE.png" alt=""></li>
+        <li><img src="img/skil/IreliaR.png" alt=""></li>
+    </ul>
+    <div id="DATAspells" class="colbox infoskillbox">
+        <div class="skilltitle">
+            <h5>艾欧尼亚热诚</h5>
+            <em>被动技能</em>
+        </div>
+        <p class="skilltip">
+            当艾瑞莉娅用技能命中敌人时，她会获得可叠加的增益效果，让她的普攻可造成额外伤害。这个效果并且在满层时还会为艾瑞莉娅提供攻击速度加成并对护盾造成更多伤害。
+        </p>
+    </div>
+    <script>
+        var $skillParent = $('#DATAspellsNAV');
+        var $tit = $('#DATAspells .skilltitle');
+        var $tip = $('#DATAspells .skilltip');
+        var h5s = ['艾欧尼亚热诚','利刃冲击','距破之舞','比翼双刃','先锋之刃'];
+        var ems = ['被动技能','快捷键：Q','快捷键：W','快捷键：E','快捷键：R'];
+        var tips = [
+            '当艾瑞莉娅用技能命中敌人时，她会获得可叠加的增益效果，让她的普攻可造成额外伤害。这个效果并且在满层时还会为艾瑞莉娅提供攻击速度加成并对护盾造成更多伤害。',
+            '艾瑞莉娅向一名敌人发起突进，造成物理伤害，施加攻击特效并治疗生命值。<br><br>如果目标已被<span>标记</span>或死于【利刃冲击】，那么【利刃冲击】的冷却时间会重置。<br><br><span class="size16 color8C8C8C">【利刃冲击】对小兵造成额外伤害。</span>',
+            '<span>第一段施放：</span>艾瑞莉娅将她的利刃结成防御阵形，获得伤害减免和1层【艾欧尼亚热诚】效果，但无法行动。<br><br><span>第二段施放：</span>艾瑞莉娅将利刃们猛挥出去，造成物理伤害。伤害值会随蓄力时间提升，最多可提升至，需要蓄力秒。<br><br><span class="size16 color8C8C8C">【距破之舞】无法被打断。</span>',
+            '艾瑞莉娅召出两柄朝着彼此飞行的利刃，造成魔法伤害和秒晕眩效果。<br><br>英雄和大型野怪会被<span>标记</span>秒。',
+            '艾瑞莉娅结成一阵风暴般的利刃，它们会在命中一名敌方英雄时向外爆开。利刃造成魔法伤害并<span>标记</span>英雄和野怪秒。<br><br>艾瑞莉娅随后会将利刃形成一道刃墙，持续 秒。穿过刃墙的敌人会受到魔法伤害，被减速%，并被缴械秒。'
+        ]
+        $skillParent.on('click',function (e) {
+            var elem = e.target;
+            if(elem.nodeName=='IMG'){
+                $('#DATAspellsNAV .current').removeClass('current');
+                elem.parentElement.className+=' current';
+                //$tit.children(':eq(0)')=
+                for(var i = 0;i<$skillParent.children().length;i++){
+                    if ($skillParent.children()[i]==e.target.parentElement){
+                        $tit.children(':eq(0)').html(h5s[i]);
+                        $tit.children(':eq(1)').html(ems[i]);
+                        $tip.html(tips[i]);
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

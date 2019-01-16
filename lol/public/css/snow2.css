@@ -1,0 +1,358 @@
+.wrap-inner {
+    width: 1000px;
+    height: 6170px;
+    margin: 0 auto;
+}
+.header, .c1, .c2, .c3, .c4, .c5 {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.header {
+    height: 920px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.hidden {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.logo1 {
+    display: block;
+    width: 203px;
+    height: 75px;
+    text-indent: -9999px;
+    position: absolute;
+    left: 253px;
+    top: 99px;
+}
+.logo2 {
+    left: 522px;
+}
+div.header a.nav1 {
+    position: absolute;
+    left: 0;
+    top: 760px;
+    display: block;
+    width: 500px;
+    height: 115px;
+    text-indent: -9999px;
+}
+div.header a.nav2 {
+    left: 500px;
+}
+.c1 {
+    height: 1153px;
+}
+.c1-p {
+    margin: 115px 0 20px 0;
+    line-height: 24px;
+    text-align: center;
+    color: #515151;
+    font-size: 18px;
+}
+.buy1 {
+    display: block;
+    width: 1000px;
+    height: 935px;
+    text-indent: -9999px;
+}
+.right_nav {
+    width: 178px;
+    height: 411px;
+    background: url(../img/snow2/nav-right.png) no-repeat;
+    position: absolute;
+    right: -178px;
+    top: 0;
+    z-index: 99999;
+}
+.right_nav a {
+    display: block;
+    width: 178px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.right_nav a.n1 {
+    margin-top: 135px;
+}
+.right_nav a#mktop {
+    height: 80px;
+}
+.c2 {
+    height: 1555px;
+    position: relative;
+}
+.buy2 {
+    height: 612px;
+    margin-top: 142px;
+}
+.c2-p {
+    width: 100%;
+    line-height: 26px;
+    color: #d5884a;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 846px;
+}
+.buy3 {
+    display: block;
+    width: 500px;
+    height: 620px;
+    position: absolute;
+    left: 0;
+    top: 885px;
+    text-indent: -9999px;
+}
+.buy4 {
+    left: 500px;
+}
+.c3 {
+    height: 1120px;
+}
+.box-in {
+    width: 530px;
+    position: relative;
+    margin: 44px 0 0 0;
+}
+.box {
+    width: 459px;
+    height: 382px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border: #ffffff solid 10px;
+}
+.list {
+    width: 2754px;
+    height: 382px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.list li {
+    width: 459px;
+    height: 382px;
+    float: left;
+}
+.bot-point {
+    text-align: center;
+    position: absolute;
+    left: 200px;
+    top: 348px;
+}
+.bot-point li {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #aba4ae;
+    cursor: pointer;
+    margin: 0 3px 0 3px;
+}
+.bot-point li.active {
+    background: #f3b46b;
+}
+.arr {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 157px;
+    background: url(../img/snow2/spr.png) no-repeat;
+}
+.prev {
+    left: 0;
+    background-position: 0 0;
+}
+.next {
+     right: 0;
+     background-position: -68px 0;
+ }
+.box-in2 {
+    margin: 60px 0 0 482px;
+}
+.box {
+    width: 459px;
+    height: 382px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border: #ffffff solid 10px;
+}
+.buy5{
+    display:block;
+    width:420px;
+    height:216px;
+    position:absolute;
+    left:543px;
+    top:379px;
+    text-indent:-9999px;
+}
+.buy6{
+    left:6px;
+    top:842px;
+}
+.r1,.r2{ width:272px; height:130px; position:absolute;}
+.r1{ background:url(../img/snow2/r1.png) no-repeat; left:-50px; top:120px;}
+.r2{ background:url(../img/snow2/r2.png) no-repeat; left:756px; top:625px;}
+.c4 {
+    height: 801px;
+}
+.buy7{
+    width:333px;
+    float:left;
+    display:block;
+    height:455px;
+    margin-top:125px;
+    text-indent:-9999px;
+}
+.more-link {
+    display: block;
+    width: 860px;
+    height: 92px;
+    float: left;
+    margin: 88px 0 0 75px;
+    text-indent: -9999px;
+}
+.c5 {
+    height: 603px;
+}
+.rule {
+    width: 980px;
+    margin: 128px 0 0 13px;
+}
+.rule li {
+    width: 980px;
+    float: left;
+}
+.rule li span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background: #c38f36;
+    color: #ffffff;
+    float: left;
+    line-height: 24px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.rule li p em {
+    color: #c38f36;
+}
+.rule li p {
+    width: 940px;
+    text-align: justify;
+    float: left;
+    line-height: 40px;
+    font-size: 22px;
+    color: #515151;
+    margin-left: 5px;
+}
+.c3-p-e {
+    padding: 18px 0 0 43px;
+    font-size: 22px;
+    color: #4f4f4f;
+    line-height: 92px;
+}
+
+
+.bg-box {
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.bg1, .bg2, .bg15 {
+    height: 200px;
+}
+.d1 {
+    background: url(../img/snow2/bg1.jpg) no-repeat center top;
+}
+.d2 {
+    background: url(../img/snow2/bg2.jpg) no-repeat center top;
+}
+.bg-box-in {
+    width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+.bg3, .bg4 {
+    height: 250px;
+}
+.d3 {
+    background: url(../img/snow2/bg3.jpg) no-repeat center top;
+}
+.d4 {
+    background: url(../img/snow2/bg4.jpg) no-repeat center top;
+}
+.bg5 {
+    height: 300px;
+}
+.d5 {
+    background: url(../img/snow2/bg5.jpg) no-repeat center top;
+}
+.bg6, .bg7, .bg8, .bg9, .bg10, .bg11 {
+    height: 400px;
+}
+.d6 {
+    background: url(../img/snow2/bg6.jpg) no-repeat center top;
+}
+.d7 {
+    background: url(../img/snow2/bg7.jpg) no-repeat center top;
+}
+.d8 {
+    background: url(../img/snow2/bg8.jpg) no-repeat center top;
+}
+.d9 {
+    background: url(../img/snow2/bg9.jpg) no-repeat center top;
+}
+.d10 {
+    background: url(../img/snow2/bg10.jpg) no-repeat center top;
+}
+.d11 {
+    background: url(../img/snow2/bg11.jpg) no-repeat center top;
+}
+.bg12 {
+    height: 500px;
+}
+.d12 {
+    background: url(../img/snow2/bg12.jpg) no-repeat center top;
+}
+.bg13, .bg14 {
+    height: 600px;
+}
+.d13 {
+    background: url(../img/snow2/bg13.jpg) no-repeat center top;
+}
+.d14 {
+    background: url(../img/snow2/bg14.jpg) no-repeat center top;
+}
+.d15 {
+    background: url(../img/snow2/bg15.jpg) no-repeat center top;
+}
+.bg16 {
+    height: 675px;
+}
+.d16 {
+    background: url(../img/snow2/bg16.jpg) no-repeat center top;
+}
+.bodybg{
+    background: rgba(0,0,0,0);
+}
+.c3-p-e img {
+    float: left;
+    margin-right: 13px;
+}
+.right_nav a:hover{ color:#fcff00;}

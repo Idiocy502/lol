@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<p class="phone">
+    <label for="phone">手机号 *</label>
+    <input type="text" name='phone' id='phone' placeholder='手机号' value="13211335463">
+    <span class="text-danger"></span>
+</p>
+<p class="email">
+    <label for="email">电子邮件地址</label>
+    <input type="email" name='email' id='email' placeholder='电子邮件地址' value="emai@123.cn">
+    <span class="text-danger"></span>
+</p>
+<p class="uname">
+    <label for="uname">用户名 *</label>
+    <input type="text" name='uname' id='uname' placeholder='用户名' value="yyy4ad">
+    <span class="text-danger" ></span>
+</p>
+<p class="upwd">
+    <label for="upwd">密码 *</label>
+    <input type="text" name='upwd' id='upwd' placeholder='密码'  value="13211335463">
+    <span class="text-danger"></span>
+</p>
+<script>
+    var uname = $('p.uname input#uname').val();
+    var upwd = $('p.upwd input#upwd').val();
+    var email = $('p.email input#email').val();
+    var phone = $('p.phone input#phone').val();
+    var reglist = [/^1[3-8]\d{9}$/,/^\w{6,12}$/,/^\w+@[0-9a-z]+(\.[0-9a-z]+)+$/i];
+    var bool = reglist[0].test(phone)+reglist[1].test(uname)+reglist[1].test(upwd)+reglist[2].test(email);
+    //bool==4?alert('success'):alert('defail');
+    console.log(fn);
+    var fn = 0;
+    function fn() {
+        console.log(1);
+    }
+    var fn = 3;
+    var fn = function(){
+        console.log(12)
+    };
+    var fn = 30;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+.infodefail {
+    height: 632px;
+    position: relative;
+}
+.defail-data {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 290px;
+    color: #fff;
+    z-index: 3;
+}
+.defail-data h1 {
+    font-size: 24px;
+    line-height: 25px;
+    padding-bottom: 25px;
+    font-weight: 400;
+}
+.defail-data h2 {
+    font-size: 42px;
+    padding-bottom: 30px;
+}
+.defail-tags span {
+    float: left;
+    width: 35px;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+    text-align: center;
+    background: #00a483;
+    border-radius: 5px;
+}
+.defail-stat {
+    margin-top: 25px;
+    height: 90px;
+    width: 150px;
+}
+.defail-stat dt {
+    float: left;
+    width: 40%;
+    margin-bottom: 5px;
+    height: 16px;
+    line-height: 16px;
+}
+.defail-stat dd {
+    float: left;
+    width: 60%;
+    margin: 2px 0 7px;
+    height: 12px;
+    background: #363c3c;
+}
+.defail-stat .up {
+    display: block;
+    height: 12px;
+}
+.defail-stat .up1 {
+    background: #f2c500;
+}
+.defail-stat .up2 {
+    background: #f59d00;
+}
+.defail-stat .up3 {
+    background: #2c97de;
+}
+.defail-stat .up4 {
+    background: #1eca6b;
+}
+.defail-buy {
+    margin-top: 25px;
+}
+.commbtn-buy {
+    display: block;
+    width: 153px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -999em;
+    background-position: -638px 0;
+}
+.commspr {
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../img/page.png);
+}
+.infodefail .sbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 305px;
+    height: 100%;
+    z-index: 2;
+    background: #000;
+    opacity: .6;
+}
+.defail-skin {
+    width: 100%;
+    height: 632px;
+    overflow: hidden;
+    position: relative;
+}
+.defail-skin-bg {
+    width: 20000px;
+    position: relative;
+}
+.defail-skin-bg li {
+    float: left;
+    width: 1240px;
+}
+.defail-skin-nav {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding-left: 306px;
+}
+.defail-skin-name {
+    padding-bottom: 10px;
+    text-align: right;
+}
+.defail-skin-name span {
+    padding: 0 5px;
+    background-color: #000;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+}
+.defail-skin-nav li {
+    float: left;
+}
+
+.defail-skin-nav a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.defail-skin-nav img {
+    opacity: .7;
+}
+.defail-skin-nav .current img, .defail-skin-nav a:hover img {
+    opacity: 1;
+}
+.defail-skin-nav .current .sbor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 4px solid #00a483;
+}
+.infoleftcont {
+    float: left;
+    width: 63%;
+}
+.infotitle {
+    margin: 47px 0 15px;
+    font-size: 16px;
+    color: #338c7a;
+}
+.bgstroy {
+    padding: 28px 32px;
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 2em;
+}
+.colbox {
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 2px rgba(0,0,0,.1);
+    background: #fff;
+}
+#Gmore, #Hmore {
+    line-height: 40px;
+}
+.infotab {
+    height: 90px;
+    position: relative;
+    z-index: 2;
+}
+.infoleftcont .infotab {
+    overflow: hidden;
+}
+.infotab li {
+    float: left;
+    width: 64px;
+    height: 64px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+.infotab li.current {
+    border-top: 3px solid #00a383;
+    padding: 10px 19px 13px;
+    background: #fff;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+.infoskillbox {
+    padding: 20px 30px;
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+}
+.skilltitle {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+}
+.skilltitle h5 {
+    display: inline;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.pagetablist-four, .pagetablist-sec, .pagetablist-third {
+    width: 100%;
+}
+.pagetab {
+    border-top: 4px solid #d7d7d7;
+    border-bottom: 1px solid #e2e2e2;
+    height: 48px;
+    background: #f0f0f0;
+}
+.pagetab-list, .pagetab-list li {
+    float: left;
+}
+.pagetab-list {
+    margin-top: -4px;
+    margin-bottom: -2px;
+    position: relative;
+    height: 53px;
+}
+.pagetablist-sec li {
+    width: 50%;
+    margin-right: -1px;
+}
+.arttips, .infospells dl {
+    padding: 20px 30px 10px;
+}
+.arttips dt, .infospells dt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #338c7a;
+    padding-bottom: 8px;
+}
+.borlineX {
+    border-bottom: 1px solid #eee;
+}
+.infospells dd {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.infospells img {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.arttips dl {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.arttips p {
+    padding-bottom: 10px;
+}
+.inforightcont {
+    float: right;
+    width: 35%;
+}
+.pageuserline-shout {
+    padding: 35px 0 22px 20px;
+    width: 311px;
+}
+.infotitle .more {
+    font-size: 12px;
+    color: #666;
+}
+.ico-more, .ico-more2 {
+    padding-left: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-position: -1411px -49px;
+    font-size: 12px;
+}
+.ico-more2 {
+    background-position: -1411px -66px;
+}
+.info-medialist {
+    padding: 15px;
+    position: relative;
+}
+.ghot-list {
+    position: relative;
+    overflow: hidden;
+}
+.ghot-list li {
+    display: block;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+    zoom: 1;
+    text-decoration: none;
+    margin-top: -1px;
+    position: relative;
+}
+.gt1, .gt2, .gt3, .gt4 {
+    overflow: hidden;
+    float: left;
+}
+.ghot-list .gt1 {
+    width: 233px;
+    position: relative;
+}
+.ghot-list .gt2 {
+    width: 24%;
+    text-align: right;
+}
+.ghot-list .gt3 {
+    width: 50%;
+    text-align: left;
+    text-indent: 2em;
+    color: #9a9898;
+}
+.ghot-list .gt4 {
+    width: 49%;
+    text-align: right;
+    color: #9a9898;
+}
+.ghot-list .names {
+    float: left;
+    height: 20px;
+    color: #555;
+    width: 85%;
+    font-size: 12px;
+    overflow: hidden;
+}
+.borlineX{
+    position: relative;
+}
+.ghot-list .names:hover .ico-arrow{background-position:-154px -35px}
+.ghot-list .spr {
+    background: url(../img/101-spr.png) no-repeat;
+}
+.ghot-list .ico-arrow {
+    margin-right: 2px;
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background-position: -20px -43px;
+    vertical-align: middle;
+}

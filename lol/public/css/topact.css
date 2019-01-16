@@ -1,0 +1,73 @@
+.comm-topact {
+    width: 100%;
+    min-width: 1230px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    background: center top no-repeat;
+    -webkit-transition: height .6s,background,.6s;
+    transition: height .6s,background,.6s;
+}
+.topact-big-img, .topact-small-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1920px;
+    height: 100%;
+    margin-left: -960px;
+}
+.topact-small-img {
+    -webkit-transition: opacity .6s;
+    transition: opacity .6s;
+    opacity: 1;
+}
+.comm-topact .dark-mask {
+    width: 100%;
+    height: 131px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/dark-jianbian-repeatx-0.png) repeat center top;
+    z-index: 1;
+}
+.comm-topact-inner {
+    width: auto;
+    max-width: 1358px;
+    min-width: 1230px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.top-act-link{-webkit-transition:bottom .6s,background .3s;transition:bottom .6s,background .3s;display:block;position:absolute;z-index:1;left:50%;margin-left:-77px;bottom:32px;background-position:-216px -39px;width:160px;height:40px;font-size:0;-webkit-transition:filter .5s;transition:filter .5s;filter:brightness(1);-webkit-filter:brightness(1)}
+.top-act-link.left{left:0;margin-left:0}
+.top-act-link:hover{filter:brightness(1.15);-webkit-filter:brightness(1.15)}
+.top-version {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 28px;
+    font-size: 14px;
+    color: #888787;
+}
+.top-version em {
+    color: #f5d185;
+    margin-right: 10px;
+}
+.top-version-link {
+    display: inline-block;
+    padding: 0 15px;
+    border: 2px solid #f5d185;
+    text-align: center;
+    line-height: 22px;
+    background: rgba(0,0,0,.65);
+    font-size: 12px;
+    color: #f5d185;
+    -moz-border-image: -moz-linear-gradient(top,#6b5024 0,#b88d35 100%);
+    -webkit-border-image: -webkit-linear-gradient(top,#6b5024 0,#b88d35 100%);
+    border-image: linear-gradient(to bottom,#6b5024 0,#b88d35 100%);
+    border-image-slice: 1;
+}
+.top-version-link:hover{
+    background:#111;
+    background:rgba(0,0,0,.8)
+}

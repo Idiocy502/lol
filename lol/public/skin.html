@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="defail-skin">
+    <ul id="skinBG" class="defail-skin-bg" style="left: 0px;">
+        <li title="默认皮肤">
+            <img src="img/role/big39000.jpg" alt="默认皮肤">
+        </li>
+        <li title="夜刃 艾瑞莉娅">
+            <img src="img/role/big39001.jpg" alt="夜刃 艾瑞莉娅">
+        </li>
+        <li title="凌云之翼 艾瑞莉娅">
+            <img src="img/role/big39002.jpg" alt="凌云之翼 艾瑞莉娅">
+        </li>
+        <li title="夜行义贼 艾瑞莉娅">
+            <img src="img/role/big39003.jpg" alt="夜行义贼 艾瑞莉娅">
+        </li>
+        <li title="冰霜之刃 艾瑞莉娅"><img src="img/role/big39004.jpg" alt="冰霜之刃 艾瑞莉娅"></li>
+        <li title="莲花之令 艾瑞莉娅"><img src="img/role/big39005.jpg" alt="莲花之令 艾瑞莉娅"></li>
+        <li title="玉剑传说 舞剑仙"><img src="img/role/big39006.jpg" alt="玉剑传说 舞剑仙"></li>
+    </ul>
+    <div class="defail-skin-nav">
+        <div class="defail-skin-name"><span id="skinName">默认皮肤</span></div>
+        <ul id="skinNAV">
+            <li rel="_0" class="current">
+                <a title="默认皮肤">
+                    <img src="img/role/small39000.jpg" alt="默认皮肤">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_1" class="">
+                <a title="夜刃 艾瑞莉娅">
+                    <img src="img/role/small39001.jpg" alt="夜刃 艾瑞莉娅">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_2" class="">
+                <a title="凌云之翼 艾瑞莉娅">
+                    <img src="img/role/small39002.jpg" alt="凌云之翼 艾瑞莉娅">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_3" class="">
+                <a title="夜行义贼 艾瑞莉娅">
+                    <img src="img/role/small39003.jpg" alt="夜行义贼 艾瑞莉娅">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_4" class="">
+                <a title="冰霜之刃 艾瑞莉娅">
+                    <img src="img/role/small39004.jpg" alt="冰霜之刃 艾瑞莉娅">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_5" class="">
+                <a title="莲花之令 艾瑞莉娅">
+                    <img src="img/role/small39005.jpg" alt="莲花之令 艾瑞莉娅">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+            <li rel="_6" class="">
+                <a title="玉剑传说 舞剑仙">
+                    <img src="img/role/small39006.jpg" alt="玉剑传说 舞剑仙">
+                    <span class="sbor"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    var $nav = $('.defail-skin-nav');
+    var arr = $('#skinBG').children()
+    $nav.on('click',function (e) {
+        if(e.target.nodeName=='IMG'){
+            var name = e.target.alt;
+            $('#skinName').html(name);
+            for(var i=0;i<arr.length;i++){
+                if(arr[i].title==name){
+                    var num = i*1240;
+                    $('#skinBG').css({
+                        left:num*-1,
+                        transition:'all 0.5s'
+                    });
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
